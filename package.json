@@ -1,5 +1,5 @@
 {
-  "name": "guide",
+  "name": "userGuide",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "name": "",
     "email": ""
   },
-  "repository": "/guide",
+  "repository": "haier-iot/userGuide",
   "scripts": {
     "guide:dev": "vuepress dev docs",
     "guide:build": "vuepress build docs"

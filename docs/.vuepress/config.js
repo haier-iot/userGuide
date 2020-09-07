@@ -1,15 +1,16 @@
-const { description } = require('../../package')
+// const { description } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'IOT文档中心',
+  base:'/userguide/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
-  base:'/userguide/',
+  description: '',
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
