@@ -61,6 +61,19 @@ module.exports = {
           ]
         }
       ],
+
+      '/Standard/': [
+        {
+          title: '接入规范',
+          collapsable: false,
+          children: [
+            'Basic',
+            'Other',
+            'Question',
+          ]
+        }
+      ],
+
     }
   },
 
