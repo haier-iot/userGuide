@@ -33,48 +33,8 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: '网器接入',
-        link: '/guide/',
-      },
-      {
-        text: '方案对接',
-        items: [
-          { text: '地产/公寓', items: [{text: '地产/公寓合作',link: '/solutions/'}] },
-          { text: '智能云对接', items: [{text: '控制海尔设备',link: '/solutions/platform-oauth-in'}] }
-        ] 
-      },
-      {
-        text: '服务文档',
-        link: 'https://haier-iot.github.io/doc/'
-      }
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-
-      '/Standard/': [
-        {
-          title: '接入规范',
-          collapsable: false,
-          children: [
-            'Basic',
-            'Other',
-            'Question',
-          ]
-        }
-      ],
-
-    }
+    nav:require('./nav-zh'),   // 引入导航栏,
+    sidebar:require('./sidebar-zh'),  // 引入侧边栏
   },
 
   /**
@@ -83,5 +43,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/last-updated',
   ]
 }

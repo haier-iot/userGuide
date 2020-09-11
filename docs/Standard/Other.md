@@ -1,5 +1,7 @@
-!> **更新时间**：{docsify-updated} 
-
+---
+title: 通用错误码
+lang: zh-cn
+---
 
 
 ## 安全规范
