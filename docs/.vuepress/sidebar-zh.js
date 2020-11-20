@@ -5,7 +5,7 @@ module.exports ={
         collapsable: false,
        // path: '/FamilyCenter/',
         children: [
-                'Introduce',
+                'README',
           ]
       },
       {
@@ -30,7 +30,7 @@ module.exports ={
         collapsable: false,
        // path: '/FamilyCenter/',
         children: [
-                'Introduce',
+                'README',
           ]
       },
 
@@ -39,7 +39,7 @@ module.exports ={
         collapsable: false,
        // path: '/FamilyCenter/',
         children: [
-                'Introduce',
+                'README',
           ]
       }
     ],

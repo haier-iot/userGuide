@@ -12,7 +12,7 @@ title: 车家互联
 :::
 
 
-## AUI对接## 
+## AUI对接
 平台提供SDK及API2种对接方式，支持设备控制、场景控制能力外，支持标准的语音对话技能，如天气查询、音乐播放等；
 
 ``` java
@@ -182,20 +182,39 @@ POST
 
 ### 设备控制
 ::: tip
-设备控制基于海尔标准模型进行控制，目前支持冰、空、热等品类模板，及部分小品类的型号模板方式进行控制；
+设备控制基于海尔标准模型进行控制，目前支持冰、空、热等品类模板，及部分小品类的型号模板方式进行控制； 
+设备profile定义文件，联系对接商务获取；
 :::
 #### 家庭设备列表查询
 
+>查询用户家庭下所有设备清单，清单范围内，可通过是否可控属性，识别当前用户可控的设备范围；
+
+接口使用文档详见：  
 https://haier-iot.github.io/doc/#/zh-cn/FamilyManage/FamilyDeviceManage??id=家庭成员查询我的所有家庭设备
 
 #### 设备控制
+>单属性控：控制设备的某一个功能； 组命令控：同时控制一组功能；
 
+接口使用文档详见：  
+https://haier-iot.github.io/doc/#/zh-cn/DevicesManage/real-time?id=用户写属性-异步接口-标准模型-单命令写操作）  
+https://haier-iot.github.io/doc/#/zh-cn/DevicesManage/real-time?id=用户设备操作-异步接口-（标准模型-组命令操作）
 
-#### 设备数据订阅
+#### 设备状态查询
+>通过API可查询设备的数字设备数据；通过数据可供页面呈现使用；  
 
+接口使用文档详见：  
+https://haier-iot.github.io/doc/#/zh-cn/DevicesManage/dataquery?id=设备影子查询  
 
 ### 场景控制
+
 #### 家庭场景查询
+>可查询特定家庭下的场景清单；
+接口使用文档详见：
+https://haier-iot.github.io/doc/#/zh-cn/IFTTTManage/IFTTT?id=查询家庭下场景列表
+
 #### 手动场景控制
+>手动类场景可CP使用用户token进行控制；
+接口使用文档详见：
+https://haier-iot.github.io/doc/#/zh-cn/IFTTTManage/IFTTT?id=手动执行用户场景
 
 [introduce]:/solutions/_media/car-home-internet.png

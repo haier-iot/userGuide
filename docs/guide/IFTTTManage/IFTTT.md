@@ -2894,7 +2894,6 @@ data|List< ComponentFunctionsDto >|Body|必填|{<br>"componentId":""，<br>"comp
 
 
 [^-^]:常用图片注释
-[IFTTT_type]:../_media/_IFTTT/IFTTT_type.png
 
 
 
