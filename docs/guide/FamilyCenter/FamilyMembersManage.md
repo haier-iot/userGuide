@@ -1,18 +1,17 @@
-
-!> **更新时间**：{docsify-updated}  
-
-
+---  
+title: 家庭成员管理
+---  
 
 
 家庭成员管理服务实现的是对“家庭”下的成员进行查询、管理等操作。
 
 
 
-#### 家庭管理员添加家庭成员
+## 家庭管理员添加家庭成员
 > 家庭管理员添加家庭成员,分享家庭设备权限给成员，发送家庭成员添加家庭成员消息,支持memberId为临时的userid  
 
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/familyMember`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/familyMember`  
  **HTTP Method：** POST
 
 **输入参数**  
@@ -30,7 +29,7 @@
 | ------------- |:----------:|:-----:|:--------:|:---------:|
 | &emsp; |  &emsp;  |   &emsp;  |  &emsp;  | &emsp; |
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -66,17 +65,17 @@ Body:
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31104、E31105、E31108、E31405、E31406、E31409  
 
 
 
-#### 家家庭管理员或家庭成员修改家庭成员家庭名称  
+## 家家庭管理员或家庭成员修改家庭成员家庭名称  
 > 家庭管理员修改家庭成员信息，其中包含家庭管理员在家庭中的昵称；家庭成员可以修改自己的信息，发送修改家庭成员信息消息给家庭成员，记录消息推送结果到日志
  
  
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/{memberId}/familyMember`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/{memberId}/familyMember`  
  **HTTP Method：** PUT
 
 **输入参数**  
@@ -104,7 +103,7 @@ Body:
 | &emsp;  |  &emsp;   |   &emsp;  |  &emsp;   | &emsp; |
 
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -143,16 +142,16 @@ Body:
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31108、E31109 
 
 
 
-#### 家庭管理员删除家庭成员
+## 家庭管理员删除家庭成员
 > 家庭主人删除家庭成员,并解除成员在家庭中分享的设备关系，并收回成员分享给家庭的设备，发送删除家庭成员消息给家庭全体成员，记录消息推送结果到日志 
  
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/{memberId}/familyMember`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/{memberId}/familyMember`  
  **HTTP Method：** DELETE
 
 **输入参数**  
@@ -170,7 +169,7 @@ Body:
 | &emsp;  |  &emsp;   |   &emsp;  |  &emsp;   | &emsp; |
 
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -201,17 +200,17 @@ Content-type: application/json
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31104、E31107、E31108  
 
 
 
 
-#### 家庭管理员或家庭成员查询家庭成员
+## 家庭管理员或家庭成员查询家庭成员
 >家庭管理员或家庭成员查询家庭成员  
 
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/familyMembers?pageNumber={curpage}&pageSize={pageSize}`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/familyMembers?pageNumber={curpage}&pageSize={pageSize}`  
  **HTTP Method：** GET
 
 **输入参数**  
@@ -233,7 +232,7 @@ Content-type: application/json
 
 
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -301,16 +300,16 @@ Content-type: application/json
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31108、E31109    
 
 
 
-#### 家庭成员或家庭管理员查询家庭成员所有成员（包含管理员）
+## 家庭成员或家庭管理员查询家庭成员所有成员（包含管理员）
 >家庭管理员或家庭成员查询家庭成员 
  
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/allFamilyMembers?pageNumber={curpage}&pageSize={pageSize}`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/{familyId}/allFamilyMembers?pageNumber={curpage}&pageSize={pageSize}`  
  **HTTP Method：** GET
 
 **输入参数**  
@@ -330,7 +329,7 @@ Content-type: application/json
 |String|	pageSize|	Body|	必填	|当前返回页实际数量，不超过规定的最大数上限|
 |String|	pageNumber|	Body|	必填	|当前页，从1开始|
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -383,16 +382,16 @@ Content-type: application/json
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31108、E31109 
 
 
 
-#### 根据关键字精确检索好友信息
+## 根据关键字精确检索好友信息
 >精确查找用户信息，用于执行需要用户ID的场景，本次用户id有时效性，临时分配，有效期为1天，支持其他接口使用，在相关接口中有说明,同时屏蔽用户敏感信息,包含手机号,邮箱,登录名。
  
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/userInfo`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/userInfo`  
  **HTTP Method：** POST
 
 **输入参数**  
@@ -409,7 +408,7 @@ Content-type: application/json
 | QueryUserInfoResult |  qUserR   |   Body  |  必填   | 用户信息 |
 
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -452,17 +451,17 @@ Body:
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、F31301
 
 
 
 
-#### 家庭管理员变更
+## 家庭管理员变更
 >家庭管理员可以主动移交管理员角色，变更时，只能变更给当前家庭下其他家庭成员；变更完成时，家庭管理员变为家庭普通成员
  
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/familyService/changeAdmin`  
+### 1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/familyService/changeAdmin`  
  **HTTP Method：** POST
 
 **输入参数**  
@@ -477,7 +476,7 @@ Body:
 标准输出
 
 
-##### 2、请求样例  
+### 2、请求样例  
 
 **用户请求**
 ```java  
@@ -506,19 +505,19 @@ Body:
 
 ```
 
-##### 3、错误码  
+### 3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31104、F31214  
 
 
 
 
-#### 虚拟用户加入家庭
+## 虚拟用户加入家庭
 
 > 实体账户作为家庭成员添加虚拟用户进入家庭，实体账户必须为虚拟账户的宿主账户
 
-##### 1、接口定义
+### 1、接口定义
 
-?> **接入地址：** `/ufm/v1/protected/familyService/joinFamily/virtualFamilyMember`
+> **接入地址：** `/ufm/v1/protected/familyService/joinFamily/virtualFamilyMember`
 
 **HTTP Method：** `POST`
 
@@ -538,7 +537,7 @@ String|	userFamilyName|	Body|	必填	|用户加入家庭附属参数,为用户�
 String|	virtualUserId|	Body|	必填|	用户在iot平台分配的userId
 
 
-##### 2、请求样例
+### 2、请求样例
 **用户请求**
 ```
 {
@@ -564,20 +563,20 @@ String|	virtualUserId|	Body|	必填|	用户在iot平台分配的userId
 
 ```
 
-##### 3、错误码
+### 3、错误码
 
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31105、E31108、E31137、E31138、 E31140、E31141、E31142、E31408、E31409  
 
 
 
 
-#### 虚拟用户退出家庭
+## 虚拟用户退出家庭
 
 > 实体账户必须为虚拟账户的宿主账户，实体账户协助虚拟账户退出家庭
 
-##### 1、接口定义
+### 1、接口定义
 
-?> **接入地址：** `/ufm/v1/protected/familyService/leaveFamily/virtualFamilyMember`
+> **接入地址：** `/ufm/v1/protected/familyService/leaveFamily/virtualFamilyMember`
 
 **HTTP Method：** `POST`
 
@@ -597,7 +596,7 @@ String| 	familyId|	Body|	必填	|要加入的家庭ID
 
 
 
-##### 2、请求样例
+### 2、请求样例
 **用户请求**
 ```
 { 
@@ -621,7 +620,7 @@ String| 	familyId|	Body|	必填	|要加入的家庭ID
 
 ```
 
-##### 3、错误码
+### 3、错误码
 
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31105、E31108、E31137、E31138、 E31140、E31141、E31142、E31408  
 
@@ -629,12 +628,12 @@ String| 	familyId|	Body|	必填	|要加入的家庭ID
 
 
 
-#### 查询虚拟成员所在家庭
+## 查询虚拟成员所在家庭
 > 实体账户查询虚拟用户所在的家庭
 
-##### 1、接口定义
+### 1、接口定义
 
-?> **接入地址：** `/ufm/v1/protected/familyService/queryFamily /virtualFamilyMember`
+> **接入地址：** `/ufm/v1/protected/familyService/queryFamily /virtualFamilyMember`
 
 **HTTP Method：** `POST`
 
@@ -653,7 +652,7 @@ String|	virtualUserId|	Body|	必填	|虚拟用户在IOT平台的用户ID，本�
 FamilyInfo[]|	families|	Body|	必填	|家庭信息
 
 
-##### 2、请求样例
+### 2、请求样例
 **用户请求**
 ```
 {
@@ -713,7 +712,7 @@ FamilyInfo[]|	families|	Body|	必填	|家庭信息
 
 ```
 
-##### 3、错误码
+### 3、错误码
 
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、E31105、E31108、E31137、E31138、 E31140、E31141、E31142、E31408
 

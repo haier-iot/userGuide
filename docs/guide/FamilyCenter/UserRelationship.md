@@ -1,15 +1,15 @@
-
-!> **更新时间**：{docsify-updated}  
-
-
-
+---  
+title: 家庭成员邀请
+---  
 
 
-#### 验证邀请用户和被邀请用户的临时ID
+
+
+##验证邀请用户和被邀请用户的临时ID
 > 被邀请用户通过验证时向本服务发送验证请求，验证成功后返回用户的真实UserId
 
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/personalService/invitation/verification`  
+###1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/personalService/invitation/verification`  
  **HTTP Method：** POST
 
 **输入参数**  
@@ -31,7 +31,7 @@
 | String |  userId  |   Body  |  必填  | IOT平台用户真实ID，邀请的用户ID |
 | String |  targetUserId  |   Body  |  必填  | IOT平台用户真实ID，被邀请的用户真实ID |
 
-##### 2、请求样例  
+###2、请求样例  
 
 **用户请求**
 ```java  
@@ -63,15 +63,15 @@ Body:
 
 ```
 
-##### 3、错误码  
+###3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008、F34002  
 
 
-#### 查询有效邀请记录
+##查询有效邀请记录
 > 被邀请用户查询被邀请记录，保留时间可以和IOT商议，验证完成后不再保留    
 
-##### 1、接口定义
-?> **接入地 址：**  `/ufm/v1/protected/personalService/invitation/ records `  
+###1、接口定义
+> **接入地 址：**  `/ufm/v1/protected/personalService/invitation/ records `  
  **HTTP Method：** GET
 
 **输入参数**  
@@ -88,7 +88,7 @@ Body:
 | ------------- |:----------:|:-----:|:--------:|:---------:|
 | PersonalInvitation[] |  invitations  |   Body  |  必填  | 邀请本用户的所有未验证记录，超时时间可以协商定义 |
 
-##### 2、请求样例  
+###2、请求样例  
 
 **用户请求**
 ```java  
@@ -118,7 +118,7 @@ Body:
 
 ```
 
-##### 3、错误码  
+###3、错误码  
 > A00001、A00002、A00003、A00004、A00005、B00001、B00002、B00003、B00004、B00006、C00001、C00002、C00003、C00004、D00001、D00002、D00003、D00004、D00005、D00006、D00007、D00008
 
 

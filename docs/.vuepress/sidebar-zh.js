@@ -1,19 +1,45 @@
 module.exports ={
-    '/guide/FamilyCenter/': [
+    '/guide/': [
       {
-        title: '服务介绍',
+        title: '设备中心',
         collapsable: false,
        // path: '/FamilyCenter/',
         children: [
                 'Introduce',
-                'FamilyManageAPI',
-                'FamilyManage',
-                'FamilyMembersManage',
-                'FamilyRoomManage',
-                'FamilyDeviceManage',
-                'FamilySubDataManage',
-                'UserRelationship',
-                'BestPractices',
+          ]
+      },
+      {
+        title: '家庭中心',
+        collapsable: false,
+       // path: '/FamilyCenter/',
+       sidebarDepth: 1, 
+        children: [
+                'FamilyCenter/Introduce',
+                'FamilyCenter/FamilyManageAPI',
+                'FamilyCenter/FamilyManage',
+                'FamilyCenter/FamilyMembersManage',
+                'FamilyCenter/FamilyRoomManage',
+                'FamilyCenter/FamilyDeviceManage',
+                'FamilyCenter/FamilySubDataManage',
+                'FamilyCenter/UserRelationship',
+                'FamilyCenter/BestPractices',
+          ]
+      },
+      {
+        title: '消息中心',
+        collapsable: false,
+       // path: '/FamilyCenter/',
+        children: [
+                'Introduce',
+          ]
+      },
+
+      {
+        title: '场景中心',
+        collapsable: false,
+       // path: '/FamilyCenter/',
+        children: [
+                'Introduce',
           ]
       }
     ],
@@ -26,6 +52,17 @@ module.exports ={
            'Basic',
           'Other',
           'Question',
+        ]
+      }
+    ],
+
+    '/solutions/car-home-internet/': [
+      {
+        title: '车家互联',
+        collapsable: false,
+        sidebarDepth: 2, 
+        children: [
+           'car-home-internet',
         ]
       }
     ],

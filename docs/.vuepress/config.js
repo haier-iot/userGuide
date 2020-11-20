@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'IOT文档中心',
+  title: '文档中心',
   base:'/userGuide/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
@@ -28,11 +28,15 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    repo: 'haier-iot/userGuide',
+    editLinks: true,
+    logo: '/assets/img/logo-fang.png',
+    docsRepo: 'haier-iot/userGuide',
+    docsDir: 'docs',
+    docsBranch: 'master',
+    editLinkText: '帮助我们改善此页面！',
+
+    lastUpdated: 'Last Updated',
     nav:require('./nav-zh'),   // 引入导航栏,
     sidebar:require('./sidebar-zh'),  // 引入侧边栏
   },

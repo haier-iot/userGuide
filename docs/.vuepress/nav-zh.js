@@ -12,14 +12,15 @@ module.exports = [
     link: '/Standard/Basic',
   },
   {
-    text: '网器接入',
+    text: '应用接入',
     link: '/guide/',
   },
   {
-    text: '方案对接',
+    text: '合作对接',
     items: [
       { text: '地产/公寓', items: [{text: '地产/公寓合作',link: '/solutions/'}] },
-      { text: '智能云对接', items: [{text: '控制海尔设备',link: '/solutions/platform-oauth-in'}] }
+      { text: '平台合作', items: [{text: '控制海尔设备',link: '/solutions/platform-oauth-in'}] },
+      { text: '车家互联', items: [{text: '车家互联',link: '/solutions/Car-home-Internet/Car-home-Internet'}] }
     ] 
   },
   {
